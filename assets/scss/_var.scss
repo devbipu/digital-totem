@@ -1,0 +1,33 @@
+// Color variables
+
+$primaryColor : #3b3f5e;
+$secondaryColor : #009ee2;
+$btnHoverColor: #14b2f6;
+$borderColor: #b3c9d8;
+$textWhite: #ffffff;
+
+// bg
+$primaryBg: #FFFFFF;
+$secondaryBg: #F5F7F8;
+
+
+
+// font includes
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
+$headingFont: 'Rajdhani', sans-serif;
+
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+// @function listFont($fName){
+
+//     @return $fName, sans-serif;
+//     // font-family: 'Helvetica Neue', sans-serif;
+//     // font-family: 'Helvetica 25 UltraLight', sans-serif;
+//     // font-family: 'Helvetica 35 Thin', sans-serif;
+//     // font-family: 'Helvetica 45 Light', sans-serif;
+//     // font-family: 'Helvetica 55 Roman', sans-serif;
+//     // font-family: 'Helvetica 65 Medium', sans-serif;
+// }
+
+$listFont : 'Helvetica Neue', sans-serif;
