@@ -36,10 +36,22 @@ body{
     padding: 0 6.5rem;
 }
 
+#dreamland{
+    #tool{
+        svg{
+            top: 10rem;
+        }
+    }
+    #dreamcontent{
+        top: 60px;
+    }
+}
+
 #headerMenu{
     position: fixed;
     top: 40px;
     width: 100%;
+    z-index: 10;
     .navWrapper{
         width: calc(100% - 3rem);
         margin: auto;
@@ -319,6 +331,7 @@ body{
     .feature{
         margin-top: 6rem;
         >.col-md-6{
+            padding-right: 5rem;
             img{        
                 border-radius: 1rem;
                 box-shadow: 0 0 30px #00315640;
@@ -718,8 +731,11 @@ body{
                     &::placeholder {
                         color: #8bb5c9;
                     }
+                    &:focus-visible{
+                        border: 1px solid #b3c9d8;
+                        outline: inherit;
+                    }
                 }
-                
             }
             .textarea-wrapper{
                 margin-top: 2rem;
@@ -738,6 +754,9 @@ body{
                     color: #3b3f5e;
                     &::placeholder {
                         color: #8bb5c9;
+                    }
+                    &:focus-visible{
+                        outline: inherit;
                     }
                 }
             }
@@ -794,8 +813,7 @@ body{
                     margin-left: 0;
                     margin-right: 3rem;
                 }
-            }
-            
+            }            
             .other-logos{
                 margin-left: 3rem;
             }
@@ -825,3 +843,218 @@ body{
 ----------------------------------------**/
 
 // header
+
+@media(max-width: 468px){
+    .headerBanner{
+        padding-bottom: 14rem;
+        .container .headerWrapper{
+            max-width: 100%;
+            width: 100%;
+            h1{
+                font-size: 3.4rem;
+                line-height: 4rem;
+            }
+            h3{
+                font-size: 1.8rem;
+            }
+        }
+    }
+    #section2{
+        .row{
+            flex-direction: column-reverse;
+        }
+    }
+    #sec10{
+        .person {
+            flex-wrap: wrap;
+            .info{
+                width: 100%;
+                margin-right: 0;
+                margin-top: 3rem;
+                .phone{
+                    margin-top: 0px;
+                }
+            }
+        }
+        .contat_form .form{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 0rem;
+            .form-wrapper .inputs-wrapper .input-wrapper{
+                flex-basis: 100%;
+                margin: 0.5rem 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        padding: 0 3rem;
+    }
+    #headerMenu .navWrapper nav .navCont li a{
+        padding: .4rem 3rem;
+    }
+    #section2{
+        .row{
+            flex-direction: column-reverse;
+            .productGallry{
+                padding-right: 0;
+            }
+            .productGallry{
+                .galleryMain{
+                    margin-top: 4rem;
+                }
+            }
+        }
+        
+    }
+    #sec3 .allProducts .productRow .productCol{
+        flex-basis: calc(49.25% - 2rem);
+    }
+    #sec4 .feature{
+        >.col-md-6{
+            padding-right: 1rem;
+            padding-bottom: 4rem;
+        }
+    }
+    #sec5{
+        .row{
+            flex-direction: column-reverse;
+        }
+    }
+    #sec6 .column{
+        padding-bottom: 5rem;
+        .column-icon-title{
+            margin-bottom: 1rem;
+            h3{
+                font-size: 2.7rem;
+            }
+        }
+        li{
+            font-size: 1.6rem;
+        }
+    }
+    #sec7{
+        .secTitle{
+            font-size: 2.7rem;
+        }
+        .partners{
+            margin-top: 3rem;
+        }
+    }
+
+    #sec8{
+        padding-bottom: 5rem;
+        .references-wrapper{
+            flex-wrap: wrap;
+            .reference{
+                padding: 2rem 0rem;
+            }
+        }
+    }
+    #sec10 .contat_form .form{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0rem;
+        .form-wrapper .inputs-wrapper .input-wrapper{
+            // flex-basis: 100%;
+            margin: 0.5rem 2rem;
+        }
+    }
+    #sec10 .person {
+        flex-wrap: wrap;
+        .info{
+            width: 100%;
+            margin-right: 0;
+            margin-top: 3rem;
+            .phone{
+                margin-top: 0px;
+            }
+        }
+    }
+
+    footer.footer{
+        padding-top: 2rem;
+        .footer-menu{
+            display: none;
+        }
+        .footer-images{
+            justify-content: center;
+            .logo-wrapper{
+                img{
+                    width: 126px;
+                }
+            }
+        }
+        .other-logos{
+            display: none;
+        }
+    }
+}
+
+// tablet
+@media(min-width: 769px) and (max-width: 1024px){
+    .container{
+        padding: 0 3rem;
+    }
+    .headerBanner{
+        .container{
+            .headerWrapper{
+                max-width: 74%;
+            }
+        }
+    }
+    // navbr
+    #headerMenu .navWrapper nav .navCont li a{
+        padding: 3rem 1.2rem;
+    }
+    #headerMenu.onSticky .navWrapper nav .navCont li a{
+        padding: 2rem 1.2rem;
+    }
+    #sec3{
+        .allProducts{
+            .productRow{
+                .productCol{
+                    flex-basis: calc(16.66% - 2rem);
+                }
+            }
+        } 
+    }
+
+    #sec10 .contat_form .form{
+        width: 58rem;
+        margin-left: 0;
+        margin-top: 0rem;
+    }
+    #sec10 .person {
+        flex-wrap: wrap;
+        .info{
+            width: 100%;
+            margin-right: 0;
+            margin-top: 3rem;
+            .phone{
+                margin-top: 0px;
+            }
+        }
+    }
+    .footer{
+        .logo-wrapper img{
+            width: 20rem;
+        }
+        .footer-images img{
+            margin-left: 3rem;
+        }
+    }
+    
+}
+
+//medium 
+@media(min-width: 1025px) and (max-width: 1440px){
+    
+}
+
+// larg 
+@media(min-width: 1441px){
+    
+}
