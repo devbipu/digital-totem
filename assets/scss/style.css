@@ -134,7 +134,7 @@ body a {
 }
 
 .headerBanner {
-  background: url(/assets/img/banner-bg.jpg) no-repeat right;
+  background: url(../img/banner-bg.jpg) no-repeat right;
   background-size: cover;
   min-height: 60rem;
   display: -webkit-box;
